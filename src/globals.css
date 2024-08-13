@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter_18pt-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter_18pt-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  line-height: 140%;
+  font-size: 12px;
+  font-weight: 400;
+}
