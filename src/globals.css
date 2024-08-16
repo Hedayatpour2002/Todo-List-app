@@ -28,4 +28,5 @@ html {
   line-height: 140%;
   font-size: 12px;
   font-weight: 400;
+  @apply bg-gray-600;
 }

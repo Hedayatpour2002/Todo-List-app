@@ -28,9 +28,16 @@ export default {
       },
     },
     container: {
-      padding: '2rem',
+      padding: "2rem",
     },
-    extend: {},
+
+    extend: {
+      backgroundImage: (theme) => ({
+        linearGradientGray700To600: `linear-gradient(to bottom, ${theme(
+          "colors.gray.700"
+        )} 50%, ${theme("colors.gray.600")} 50%)`,
+      }),
+    },
   },
   plugins: [],
 };
