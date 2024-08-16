@@ -23,6 +23,15 @@
   }
 }
 
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 700px;
+    @apply mx-auto;
+    @apply px-16;
+  }
+}
+
 html {
   font-family: "Inter", sans-serif;
   line-height: 140%;

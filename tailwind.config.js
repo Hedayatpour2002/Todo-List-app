@@ -27,9 +27,6 @@ export default {
         dark: "#1E6F9F",
       },
     },
-    container: {
-      padding: "2rem",
-    },
 
     extend: {
       backgroundImage: (theme) => ({
