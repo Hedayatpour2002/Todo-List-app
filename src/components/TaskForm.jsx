@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 
 export default function TaskForm({ addNewTask }) {
@@ -37,3 +38,7 @@ export default function TaskForm({ addNewTask }) {
     </form>
   );
 }
+
+TaskForm.propTypes = {
+  addNewTask: PropTypes.func.isRequired,
+};
