@@ -32,10 +32,10 @@ export default function TaskManager() {
     );
   }
   return (
-    <main className="">
+    <main className="text-sm md:text-base lg:text-lg">
       <TaskForm addNewTask={addNewTask} />
 
-      <section className="container pt-16 text-sm grid gap-6">
+      <section className="container pt-16  grid gap-6">
         <div className="flex items-center justify-between font-bold">
           <div className="flex gap-2">
             <span className="text-blue">Tasks created</span>
@@ -60,18 +60,19 @@ export default function TaskManager() {
             </Fragment>
           ))
         ) : (
-          <div className="border-t border-gray-400 flex flex-col items-center justify-center gap-4 px-6 py-16">
+          <div className="border-t border-gray-400 flex flex-col items-center justify-center gap-4 md:gap-6 lg:gap-8 px-6 py-16">
             <img
               src="./src/images/Clipboard.svg"
               alt="tasks-list-icon"
+              className="md:scale-110 lg:scale-125"
               width={56}
               height={56}
             />
-            <div className="text-gray-300 text-base ">
-              <p className="font-bold">You haven&apos;t added any tasks yet</p>
-              <p className="font-medium">
-                Create and organize your to-do list.
+            <div className="text-gray-300 text-center">
+              <p className="font-bold text-base md:text-lg lg:text-xl">
+                You haven&apos;t added any tasks yet
               </p>
+              <p>Create and organize your to-do list.</p>
             </div>
           </div>
         )}
@@ -82,7 +83,7 @@ export default function TaskManager() {
 
 function RoundedGrayBox({ title }) {
   return (
-    <div className="bg-gray-400 text-gray-200 rounded-full text-xs py-0.5 px-2 flex items-center justify-center">
+    <div className="bg-gray-400 text-gray-200 rounded-full text-xs md:text-sm lg:text-base py-0.5 px-2 flex items-center justify-center">
       {title}
     </div>
   );

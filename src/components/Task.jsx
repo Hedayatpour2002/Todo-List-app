@@ -27,6 +27,7 @@ export default function Task({
         <img
           src="./src/images/trash.svg"
           alt="delete-icon"
+          className="md:scale-110 lg:scale-125"
           width={24}
           height={24}
         />
