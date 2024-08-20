@@ -4,6 +4,14 @@
 
 This project is a simple to-do list application built with React and Tailwind CSS. It allows users to add, delete, and update tasks, as well as view the count of tasks created and completed.
 
+<!-- ## Demo
+
+[Check the live demo here ⭐]() -->
+
+## Preview
+
+![Preview](preview.gif)
+
 ## Features
 
 - **Add New Tasks**: Users can create new tasks by providing a title.
