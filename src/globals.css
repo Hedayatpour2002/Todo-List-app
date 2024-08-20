@@ -41,7 +41,7 @@ html {
 }
 
 input[type="checkbox"] {
-  @apply appearance-none w-6 h-6 border border-blue rounded-full relative flex items-center justify-center transition duration-100;
+  @apply appearance-none w-6 h-6 border-2 border-blue rounded-full relative flex items-center justify-center transition duration-100;
 }
 
 input[type="checkbox"]:hover {
