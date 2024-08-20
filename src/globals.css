@@ -39,3 +39,41 @@ html {
   font-weight: 400;
   @apply bg-gray-600;
 }
+
+input[type="checkbox"] {
+  @apply appearance-none w-6 h-6 border border-blue rounded-full relative flex items-center justify-center transition duration-100;
+}
+
+input[type="checkbox"]:hover {
+  @apply bg-blue-dark bg-opacity-20;
+}
+
+input[type="checkbox"]:checked {
+  @apply bg-purple-dark border-purple-dark;
+}
+
+input[type="checkbox"]:checked:hover {
+  @apply bg-purple;
+}
+
+input[type="checkbox"]:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 30%;
+  border: 2px solid white;
+  border-top: none;
+  border-right: none;
+  rotate: 0deg;
+  translate: -100% 100%;
+  opacity: 0;
+  transition: all 100ms;
+}
+
+input[type="checkbox"]:checked::after {
+  opacity: 1;
+  translate: -50% -50%;
+  rotate: -45deg;
+}
