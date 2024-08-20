@@ -24,11 +24,11 @@ To run the project locally, follow these steps:
    ```
 3. Install dependencies:
    ```bash
-      npm install
+   npm install
    ```
 4. Start the development server:
    ```bash
-      npm run dev
+   npm run dev
    ```
 5. Open your browser and go to the URL provided in the terminal to see the application in action
 
